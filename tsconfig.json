@@ -1,0 +1,14 @@
+{
+    "compilerOptions": {
+      "target": "es2016",              // Target ECMAScript version
+      "module": "commonjs",             // Module system for Node.js
+      "strict": true,                   // Enable strict type-checking
+      "esModuleInterop": true,          // Interoperability between ES6 modules and CommonJS
+      "skipLibCheck": true,             // Skip type-checking of declaration files
+      "forceConsistentCasingInFileNames": true, // Ensure consistent casing in file names
+      "outDir": "./dist"                // Directory for compiled JS files
+    },
+    "include": ["src/**/*"],            // Include all TypeScript files in src/
+    "exclude": ["node_modules"]         // Exclude the node_modules directory
+  }
+  
