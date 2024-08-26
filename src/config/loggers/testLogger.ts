@@ -9,7 +9,7 @@ const testLogger = winston.createLogger({
     winston.format.json()        // Log format in JSON
   ),
   transports: [
-    new winston.transports.File({ filename: path.join(__dirname, '../../logs/test.log') })  // Log to file for tests
+    new winston.transports.File({ filename: path.join(__dirname, '../../../logs/test.log') })  // Log to file for tests
   ]
 });
 

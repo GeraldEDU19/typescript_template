@@ -1,7 +1,7 @@
 import winston from 'winston';
 import path from 'path';
 
-const logPath = path.join(__dirname, '../../logs/combined.log');
+const logPath = path.join(__dirname, '../../../logs/mongoose.log');
 
 const logger = winston.createLogger({
   level: 'info',
@@ -10,7 +10,6 @@ const logger = winston.createLogger({
     winston.format.json()
   ),
   transports: [
-    new winston.transports.Console(),
     new winston.transports.File({ filename: logPath })  // Use absolute path
   ]
 });

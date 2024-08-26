@@ -1,5 +1,5 @@
 import bcrypt from 'bcrypt';
-import logger from '../config/logger';
+import logger from '../config/loggers/logger';
 
 const saltRounds = parseInt(process.env.SALT_ROUNDS as string, 10);
 const saltString = process.env.SALT_STRING as string;  // Retrieve the salt string from environment variables

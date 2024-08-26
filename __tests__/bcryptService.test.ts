@@ -1,7 +1,7 @@
 import { hashPassword, comparePassword } from '../src/services/bcryptService';
-import testLogger from '../src/config/testLogger';
+import testLogger from '../src/config/loggers/testLogger';
 
-jest.mock('../src/config/logger', () => ({
+jest.mock('../src/config/loggers/logger', () => ({
     info: jest.fn(),
     error: jest.fn(),
 }));

@@ -1,8 +1,18 @@
-import { sum } from './services/sum';
-import logger from './config/logger';
+// import {connectDB, disconnectDB } from './config/mongoose';  // Import the Mongoose connection config
+// import mongoose from 'mongoose';  // Import Mongoose to handle disconnection
+// import { createUser } from './services/userService';  // Import the User model
 
-const a = 1;
-const b = 2;
+// const main = async () => {
+//   // Connect to the database using the config file
+//   await connectDB();
 
+//   // Create a user
+//   let user = await createUser({email: "gercha32@gmail.com", password: "pass"});
+//   console.log("🚀 ~ main ~ user:", user)
 
-const result = sum(a, b);
+//   // Disconnect from the database
+//   await disconnectDB();
+//   console.log('MongoDB disconnected successfully');
+// };
+
+// main();
